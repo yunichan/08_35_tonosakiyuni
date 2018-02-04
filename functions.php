@@ -4,7 +4,7 @@
 //DB接続関数（PDO）
 function db_con(){
     try {
-      $pdo = new PDO('mysql:dbname=desing_db;charset=utf8;host=localhost','root','');
+      $pdo = new PDO('mysql:dbname=design_db;charset=utf8;host=localhost','root','');
       return $pdo;
     } catch (PDOException $e) {
       exit('データベースに接続できませんでした。'.$e->getMessage());
